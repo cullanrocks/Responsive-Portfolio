@@ -165,7 +165,7 @@ h3,
 .work {
     position: relative;
     width: 274px;
-    margin: 20px 0 25px;
+    margin: 0 auto;
     overflow: auto;
     /*****************
     float: left;
@@ -264,8 +264,10 @@ input[type=submit] {
         text-align: center;
     }
     .work {
-        float: none;
-
+        margin: 0 auto;
+            }
+    .work:nth-child(even) {
+        margin: 0 auto;
     }
     #main-container {
         padding-top: 20px;
@@ -284,7 +286,13 @@ input[type=submit] {
     .container {
         width: 100%;
     }
-
+    .work {
+    margin-left: 40px;
+    float: left;
+    }
+    .work:nth-child(even) {
+    margin-right: 40px;
+    }
     .sidebar {
         width: 100%;
         text-align: center;
@@ -302,13 +310,7 @@ input[type=submit] {
         /*************
         float: right;
         ***************/
-        float: left;
-
-    }
-    .work:nth-child(even) {
-        float: left;
-        margin-right: 40px;
-        
+        margin: 0 auto;
     }
     .sidebar {
         width: 100%;
