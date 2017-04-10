@@ -1,4 +1,4 @@
-body {
+        body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 34px;
@@ -162,6 +162,12 @@ h3,
 
 /* portfolio page */
 
+.portfolioimages {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .work {
     position: relative;
     width: 274px;
@@ -263,12 +269,6 @@ input[type=submit] {
     h1 {
         text-align: center;
     }
-    .work {
-        margin: 0 auto;
-            }
-    .work:nth-child(even) {
-        margin: 0 auto;
-    }
     #main-container {
         padding-top: 20px;
         max-width: 100%;
@@ -277,43 +277,47 @@ input[type=submit] {
         width: 100%;
         text-align: center;
     }
-}
+    .portfolioimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    @media screen and (max-width:768px) {
+        .wrapper {
+            width: 100%;
+        }
+        .container {
+            width: 100%;
+        }
+        
+        .sidebar {
+            width: 100%;
+            text-align: center;
+        }
+          #main-container {
+        padding-top: 20px;
+        max-width: 100%;
+    }
+        .portfolioimages {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        @media screen and (max-width:980px) {
+            .wrapper {
+                width: 100%;
+            }
+            .main-section {
+                width: 100%;
+            }
+            .sidebar {
+                width: 100%;
+                text-align: center;
+                float: left;
+            }
+            .portfolioimages {
+                display: flex;
 
-@media screen and (max-width:768px) {
-    .wrapper {
-        width: 100%;
-    }
-    .container {
-        width: 100%;
-    }
-    .work {
-    margin-left: 40px;
-    float: left;
-    }
-    .work:nth-child(even) {
-    margin-right: 40px;
-    }
-    .sidebar {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:980px) {
-    .wrapper {
-        width: 100%;
-    }
-    .main-section {
-        width: 100%;
-    }
-    .work {
-        /*************
-        float: right;
-        ***************/
-        margin: 0 auto;
-    }
-    .sidebar {
-        width: 100%;
-        text-align: center;
-    }
-}
+                flex-direction: row;
+            }
+        }
